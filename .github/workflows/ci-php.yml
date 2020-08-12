@@ -44,3 +44,8 @@ jobs:
 
     - name: Run our Linter and PHPStan
       run: composer test
+    
+    - uses: actions/upload-artifact@v2
+      with:
+         name: build
+         path: .
